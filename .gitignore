@@ -1,0 +1,139 @@
+##############################################
+#               JAVA / SPRING                #
+##############################################
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Spring Boot
+*.jar
+*.war
+*.ear
+*.class
+
+# Logs
+*.log
+*.out
+
+##############################################
+#         FRONTEND (VITE / NODE)             #
+##############################################
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log
+
+# Vite build output
+dist/
+.vite/
+*.tsbuildinfo
+
+# Lock files (optional — remove if needed)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+##############################################
+#                IDE / EDITORS               #
+##############################################
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.apt_generated/
+.factorypath
+
+##############################################
+#              OPERATING SYSTEM              #
+##############################################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+##############################################
+#             ENVIRONMENT / KEYS             #
+##############################################
+
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Common key patterns
+*.pem
+*.key
+*.cert
+
+##############################################
+#             TEMP FILES / CACHE             #
+##############################################
+
+# General temp files
+*.tmp
+*.temp
+*.swp
+*~
+.cache/
+.tmp/
+
+# Editor swap files
+*.swo
+*.swp
+
+##############################################
+#          PROJECT-SPECIFIC IGNORE           #
+##############################################
+
+# Ignore backend static build if frontend is deployed separately
+# (remove this block if you serve frontend via Spring Boot)
+retailchain-backend/src/main/resources/static/assets/
+retailchain-backend/src/main/resources/static/index.html
+
+# Ignore local database files
+*.db
+*.sqlite
+
+##############################################
+#                OPTIONAL ITEMS              #
+##############################################
+
+# Ignore local scripts
+scripts/
+*.sh
+*.bat
+
+# Ignore test coverage (if added later)
+coverage/
+
